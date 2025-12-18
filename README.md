@@ -3,6 +3,11 @@
 
 Done by: Deema Hazim and Ameera Alrahmah
 
+**The Colab notebook can be accessed here:**
+<a href="https://colab.research.google.com/drive/1pMcSyFjsyEOKLKyDGjylcr2C6AMB9VpQ?usp=sharing" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/>
+</a>
+
 
 # Introduction
 
