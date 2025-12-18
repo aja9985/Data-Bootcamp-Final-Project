@@ -60,14 +60,11 @@ This suggests popularity depends primarily on factors beyond the music itself- a
 
 
 
-
 ### Question 2: Can we classify songs as “hit” vs “non-hit”?
 
 
 
-
 ### Question 3: Do genre or artist popularity improve prediction accuracy?
-
 
 
 
