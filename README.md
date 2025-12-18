@@ -116,7 +116,7 @@ Genre hit rate analysis showed pop-film had the highest hit rate at 94.4%, follo
 ### **Interpretation**
 Artist popularity substantially improves prediction accuracy while genre information does not. The 94.3% accuracy with artist popularity demonstrates that who creates the music is more important than what the music sounds like. This aligns with industry dynamics where established artists benefit from existing fan bases, promotional resources, and algorithmic playlist placements that give their songs advantages.
 
-The genre hit rate analysis provides additional context: certain genres like pop-film (94.4%), chill (78.3%), and k-pop (71.2%) have much higher hit rates than others. However, this information appears less useful for prediction than artist popularity, possibly because successful artists already tend to work within popular genres, or because the audio features capture genre-specific characteristics more effectively than categorical labels.
+The genre hit rate analysis shows that certain genres like pop-film (94.4%), chill (78.3%), and k-pop (71.2%) have much higher hit rates than others. However, this information appears less useful for prediction than artist popularity, possibly because successful artists already tend to work within popular genres, or because the audio features capture genre-specific characteristics more effectively than categorical labels.
 
 
 
