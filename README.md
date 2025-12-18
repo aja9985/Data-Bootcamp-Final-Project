@@ -178,4 +178,4 @@ Our findings highlight that while audio features effectively describe and catego
 
 # Next Steps
 
-Future work could enhance predictions by incorporating additional data sources beyond audio features. This includes temporal information like release timing and seasonal trends, lyrical analysis to understand themes and sentiment, social media signals such as TikTok trends and playlist additions, and collaboration networks between artists. Additionally, comparing popularity across different platforms (YouTube, Apple Music, radio) and building genre-specific models could reveal patterns that a general model misses.
+Future work could enhance predictions by incorporating additional data sources beyond audio features. This could include temporal information like release timing and seasonal trends, lyrical analysis to understand themes and sentiment, social media signals such as TikTok trends and playlist additions, and collaboration networks between artists. Additionally, comparing popularity across different platforms and building genre-specific models could reveal patterns that a general model misses.
