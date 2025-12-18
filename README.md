@@ -2,11 +2,13 @@
 Explaining Music Popularity Using Audio Features and Machine Learning
 
 **Introduction**
+
 What makes a song popular? With streaming platforms like Spotify, we now have data that measures musical characteristics like danceability, energy, and mood. This project investigates whether these audio features can predict or explain song popularity.
 
 Using a dataset of 114,000 Spotify tracks, we address four questions: (1) Which audio features matter most for popularity? (2) Can we classify songs as "hits" versus "non-hits"? (3) Do genre or artist factors improve prediction? (4) Do audio features cluster into underlying patterns?
 
 **Dataset Description**
+
  We use the "maharshipandya/spotify-tracks-dataset" from Hugging Face, containing 114,000 Spotify tracks across 125 genres. The data comes from Spotify's Web API.
 
 The dataset includes nine audio measurements:
