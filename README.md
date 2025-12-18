@@ -85,11 +85,20 @@ We standardized the data and ran PCA to extract components. We examined:
 
 **Results**
 
+The first three components together explain 61% of the variance in the data, each explaining more than 10% of the variance, while the remaining components contribute relatively little new information (less than 10% variance).
 
-The first three components together explain 61% of the variance in the data. The first three components capture the most meaningful patterns in the data, each explaining more than 10% of the variance, while the remaining components contribute relatively little new information (less than 10% variance).
 
+<img width="2525" height="1407" alt="pca_variance (1)" src="https://github.com/user-attachments/assets/08f4ab80-3c3f-422f-8681-96cc54f1ed28" />
 
 *Figure 1: Variance explained by each principal component* 
+
+
+To understand what these components represent, we examine how strongly each original audio feature contributes to each component. The heatmap below shows these loadings: red indicates features that strongly define the positive end of a component, while blue indicates features that define the negative end.
+
+
+<img width="1900" height="1668" alt="pca_heatmap" src="https://github.com/user-attachments/assets/11616a2c-8155-4fc4-8140-c89abf93961b" />
+
+*Figure 2: Feature loadings on the first three principal components* 
 
 
 - **Component 1 (32% of variance)** - Energy/Loudness vs. Acoustic: Energy and loudness load positively, while acousticness loads negatively. This dimension separates high-energy, loud songs from acoustic, mellow tracks.
@@ -97,13 +106,8 @@ The first three components together explain 61% of the variance in the data. The
 - **Component 3 (14% of variance)** - Live Performance: Liveness and speechiness define this dimension, capturing the difference between live recordings with audience presence and studio productions.
 
 
-To understand what these components represent, we examine how strongly each original audio feature contributes to each component. The heatmap below shows these loadings: red indicates features that strongly define the positive end of a component, while blue indicates features that define the negative end.
-
-
-*Figure 2: Heatmap* 
-
-
 Correlation with Popularity: When we checked how these three dimensions relate to popularity, all correlations were below 0.04 (essentially zero). This means that while songs do cluster into these interpretable patterns, being high or low on any dimension doesn't predict popularity.
+
 
 
 **Interpretation**
