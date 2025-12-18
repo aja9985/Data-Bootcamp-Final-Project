@@ -8,7 +8,7 @@ Done by: Deema Hazim and Ameera Alrahmah
 
 What makes a song popular? With streaming platforms like Spotify, we now have data that measures musical characteristics like danceability, energy, and mood. This project investigates whether these audio features can predict or explain song popularity.
 
-Using a dataset of 114,000 Spotify tracks, we address four questions: (1) Which audio features matter most for popularity? (2) Can we classify songs as "hits" versus "non-hits"? (3) Do genre or artist factors improve prediction? (4) Do audio features cluster into underlying patterns?
+Using a dataset of 114,000 Spotify tracks, we address four questions: (1) Which audio features matter most for popularity? (2) Can we classify songs as "hits" versus "non-hits"? (3) Do genre or artist factors improve prediction? (4) Do audio features cluster into underlying dimensions that explain why certain features matter for hit prediction?
 
 **Dataset Description**
 
@@ -58,3 +58,64 @@ While we successfully identified which features correlate with popularity, the e
 
 This suggests popularity depends primarily on factors beyond the music itself- artist fame, marketing budget, playlist placements, release timing, social media buzz, and cultural trends. Audio features describe what songs sound like, but they don't determine which songs succeed. This explains why predicting exact popularity scores is so difficult: the music industry's success factors extend far beyond sonic properties. However, while predicting exact popularity scores proves difficult, a more practical question emerges: can these same audio features distinguish between hits and non-hits instead?
 
+
+
+
+### Question 2: Can we classify songs as “hit” vs “non-hit”?
+
+
+
+
+### Question 3: Do genre or artist popularity improve prediction accuracy?
+
+
+
+
+### Question 4: Do audio features cluster into underlying dimensions that explain why certain features matter for hit prediction?
+
+
+**Methods**
+
+
+We used Principal Component Analysis (PCA) to see if the nine audio features cluster into broader patterns. PCA is a technique that looks for correlations between features and groups them into components - new dimensions that capture the main ways songs differ from each other. This helps us understand whether we really need to track nine separate features or if a few underlying patterns explain most of the variation.
+
+
+We standardized the data and ran PCA to extract components. We examined:
+- How much variance each component explains
+- Which original features load most strongly onto each component
+- Whether these components correlate with popularity
+
+
+**Results**
+
+
+The first three components together explain 61% of the variance in the data. The first three components capture the most meaningful patterns in the data, each explaining more than 10% of the variance, while the remaining components contribute relatively little new information (less than 10% variance).
+
+
+*Figure 1: Variance explained by each principal component* 
+
+
+- **Component 1 (32% of variance)** - Energy/Loudness vs. Acoustic: Energy and loudness load positively, while acousticness loads negatively. This dimension separates high-energy, loud songs from acoustic, mellow tracks.
+- **Component 2 (16% of variance)** - Danceability/Mood: Danceability and valence load most strongly here, representing upbeat, positive party music versus subdued tracks.
+- **Component 3 (14% of variance)** - Live Performance: Liveness and speechiness define this dimension, capturing the difference between live recordings with audience presence and studio productions.
+
+
+To understand what these components represent, we examine how strongly each original audio feature contributes to each component. The heatmap below shows these loadings: red indicates features that strongly define the positive end of a component, while blue indicates features that define the negative end.
+
+
+*Figure 2: Heatmap* 
+
+
+Correlation with Popularity: When we checked how these three dimensions relate to popularity, all correlations were below 0.04 (essentially zero). This means that while songs do cluster into these interpretable patterns, being high or low on any dimension doesn't predict popularity.
+
+
+**Interpretation**
+
+
+The PCA successfully found three clear patterns in how audio features group together- songs vary along dimensions of energy, danceability, and liveness. However, these patterns don't predict which songs become popular.
+
+
+This finding reinforces what we learned in Question 1: popular tracks span all styles. Hits can be energetic or acoustic, danceable or calm, live or studio-recorded. Audio features describe musical characteristics and help us categorize songs, but they don't provide a formula for how popular a song would be. 
+
+
+### Conclusion
